@@ -13,4 +13,4 @@ def top_clock_time(df: DataFrame):
     return df.sort("clock_time_s", descending=True).limit(10)
 
 def top_cpu_time(df: DataFrame):
-    return df.sort("clock_time_s", descending=True).limit(10)
+    return df.sort("cpu_time_s", descending=True).limit(10)
