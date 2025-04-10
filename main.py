@@ -1,5 +1,5 @@
 def main():
-    print("Hello from sc-load-perf!")
+    print("Hello from sc_load_perf!")
 
 
 if __name__ == "__main__":
