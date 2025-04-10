@@ -1,4 +1,4 @@
 import polars as pl
 
-def testing() -> int:
-    return 7
+def stats() -> pl.DataFrame:
+    return pl.read_csv('~/Code/suttacentral/server/load-data-run.csv')
