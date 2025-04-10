@@ -10,4 +10,7 @@ def stats() -> pl.DataFrame:
     return df.filter(pl.col('message') != 'All done')
 
 def top_clock_time(df: DataFrame):
-    return df.sort("clock_time_s", descending=True).limit(5)
+    return df.sort("clock_time_s", descending=True).limit(10)
+
+def top_cpu_time(df: DataFrame):
+    return df.sort("clock_time_s", descending=True).limit(10)
